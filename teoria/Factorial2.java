@@ -9,7 +9,7 @@ public class Factorial2 {
 
 	/**
 	 * Método que calcula el valor factorial
-	 * de un número entero
+	 * de un número entero usando un bucle while
 	 * @param numero valor a calcular factorial
 	 * @return factorial del número de tipo long
 	 */
@@ -23,6 +23,22 @@ public class Factorial2 {
 			contador++;
 		}
 		return acumulador;
+	}
+
+	/**
+	 * Método que calcula el valor factorial
+	 * de un número entero usando bucle for
+	 * @param numero valor a calcular factorial
+	 * @return factorial del número de tipo long
+	 */
+	public static long calcularFactorial1(int numero) {
+
+		long factorial = 1;
+		for (int i = 2 ; i <= numero ; i++ ) {
+			factorial = factorial * i;
+		}
+		return factorial;
+
 	}
 	
 }
