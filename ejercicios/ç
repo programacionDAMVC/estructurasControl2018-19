@@ -1,0 +1,62 @@
+public class Numeros {
+
+	public static void imprimirNumero1Al10(){
+
+		for ( int i = 1 ; i <= 10 ; i++ ) {
+
+			//System.out.println(i);
+			System.out.printf( "%6d" , i ); //dejamos 6 espacios
+
+			if ( i % 3 == 0 ) { //imprimimos a tres columnas
+				System.out.println();
+			}
+
+		}
+		System.out.println();
+		
+	}
+
+	public static void imprimirSerie5(){
+
+		for ( int i = 20 ; i <= 80 ; i += 5 ) {
+
+			//System.out.println(i);
+			System.out.printf( "%6d" , i );
+
+			if ( i % 3 == 0 ) { 
+				System.out.println();
+			}
+
+		}
+		System.out.println();
+	}
+
+	public static void imprimirSerie2(){
+
+		for ( int i = 100 ; i >= 50 ; i = i - 2 ) { //similar i -= 2
+
+			//System.out.println(i);
+			System.out.printf( "%6d" , i );
+
+			if ( i % 3 == 0 ) {
+				System.out.println();
+			}
+
+		}
+		System.out.println();
+	}
+
+	public static int sumar1aN(int n) {
+
+		int contador = 1;
+		int suma     = 0;
+
+		while (contador <= n){
+			suma +=contador;
+			contador++;
+		}
+
+		return suma;
+
+	}
+}
